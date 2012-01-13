@@ -83,11 +83,11 @@ window.addEventListener("DOMContentLoaded", function(){
         getSelectedRadio();
         var item            ={};
             item.group      =["Group:", $('groups').value];
-            item.tname      =["Team Name:", $('tname').value];
+            item.tname      =["Name:", $('tname').value];
             item.sex        =["Sex:", sexValue];
-            item.date       =["Startdate", $('startdate').value];
-            item.pword      =["Password:", $('pword').value];
-            item.cpword     =["Confirm Password:", $('cpword').value];
+            item.date       =["Birthday", $('startdate').value];
+            item.pword      =["Party:", $('pword').value];
+            item.cpword     =["Phone:", $('cpword').value];
             item.email       =["Email:", $('email').value];
             item.rating     =["Rating", $('rating').value];
             item.comments   =["Comments" , $('comments').value];
@@ -179,6 +179,194 @@ window.addEventListener("DOMContentLoaded", function(){
 				"email":	["Email:","jordanMooney@cocktailsanddreams.com"],
 				"rating":	["Rating:","8"],
 				"comments":	["Comments:","Divorce Party"]
+			},
+			"contact4":{
+				"group": 	["Day:", "Thursday"],
+				"tname": 	["Name:","Elizabeth Shue"],
+				"sex":   	["Sex:","Female"],
+				"startdate":["Birthday:","1963-10-6"],
+				"pword":	["People In Party:","12"],
+				"cpword":	["Phone Number:","312-555-5423"],
+				"email":	["Email:","jordanMooney@cocktailsanddreams.com"],
+				"rating":	["Rating:","8"],
+				"comments":	["Comments:","Divorce Party"]
+			},
+			"contact5":{
+				"group": 	["Day:", "Friday"],
+				"tname": 	["Name:","Elizabeth Shue"],
+				"sex":   	["Sex:","Female"],
+				"startdate":["Birthday:","1963-10-6"],
+				"pword":	["People In Party:","12"],
+				"cpword":	["Phone Number:","312-555-5423"],
+				"email":	["Email:","jordanMooney@cocktailsanddreams.com"],
+				"rating":	["Rating:","8"],
+				"comments":	["Comments:","Divorce Party"]
+			},
+			"contact6":{
+				"group": 	["Day:", "Thursday"],
+				"tname": 	["Name:","Elizabeth Shue"],
+				"sex":   	["Sex:","Female"],
+				"startdate":["Birthday:","1963-10-6"],
+				"pword":	["People In Party:","12"],
+				"cpword":	["Phone Number:","312-555-5423"],
+				"email":	["Email:","jordanMooney@cocktailsanddreams.com"],
+				"rating":	["Rating:","8"],
+				"comments":	["Comments:","Divorce Party"]
+			},
+			"contact7":{
+				"group": 	["Day:", "Saturday"],
+				"tname": 	["Name:","Elizabeth Shue"],
+				"sex":   	["Sex:","Female"],
+				"startdate":["Birthday:","1963-10-6"],
+				"pword":	["People In Party:","12"],
+				"cpword":	["Phone Number:","312-555-5423"],
+				"email":	["Email:","jordanMooney@cocktailsanddreams.com"],
+				"rating":	["Rating:","8"],
+				"comments":	["Comments:","Divorce Party"]
+			},
+			"contact8":{
+				"group": 	["Day:", "Thursday"],
+				"tname": 	["Name:","Elizabeth Shue"],
+				"sex":   	["Sex:","Female"],
+				"startdate":["Birthday:","1963-10-6"],
+				"pword":	["People In Party:","12"],
+				"cpword":	["Phone Number:","312-555-5423"],
+				"email":	["Email:","jordanMooney@cocktailsanddreams.com"],
+				"rating":	["Rating:","8"],
+				"comments":	["Comments:","Divorce Party"]
+			},
+			"contact9":{
+				"group": 	["Day:", "Saturday"],
+				"tname": 	["Name:","Elizabeth Shue"],
+				"sex":   	["Sex:","Female"],
+				"startdate":["Birthday:","1963-10-6"],
+				"pword":	["People In Party:","12"],
+				"cpword":	["Phone Number:","312-555-5423"],
+				"email":	["Email:","jordanMooney@cocktailsanddreams.com"],
+				"rating":	["Rating:","8"],
+				"comments":	["Comments:","Divorce Party"]
+			},
+			"contact10":{
+				"group": 	["Day:", "Thursday"],
+				"tname": 	["Name:","Elizabeth Shue"],
+				"sex":   	["Sex:","Female"],
+				"startdate":["Birthday:","1963-10-6"],
+				"pword":	["People In Party:","12"],
+				"cpword":	["Phone Number:","312-555-5423"],
+				"email":	["Email:","jordanMooney@cocktailsanddreams.com"],
+				"rating":	["Rating:","8"],
+				"comments":	["Comments:","Divorce Party"]
+			},
+			"contact11":	{
+				"group": 	["Day:", "Saturday"],
+				"tname": 	["Name:","Tyrese Gibson"],
+				"sex":   	["Sex:","Male"],
+				"startdate":["Birthday:","1978-12-30"],
+				"pword":	["People In Party:","15"],
+				"cpword":	["Phone Number:","212-555-2345"],
+				"email":	["Email:","blacktye@hasbro.com"],
+				"rating":	["Rating:","8"],
+				"comments":	["Comments:","30th Birthday"]
+			},
+			"contact12":{
+				"group": 	["Day:", "Thursday"],
+				"tname": 	["Name:","Elizabeth Shue"],
+				"sex":   	["Sex:","Female"],
+				"startdate":["Birthday:","1963-10-6"],
+				"pword":	["People In Party:","12"],
+				"cpword":	["Phone Number:","312-555-5423"],
+				"email":	["Email:","jordanMooney@cocktailsanddreams.com"],
+				"rating":	["Rating:","8"],
+				"comments":	["Comments:","Divorce Party"]
+			},
+			"contact13":{
+				"group": 	["Day:", "Friday"],
+				"tname": 	["Name:","Elizabeth Shue"],
+				"sex":   	["Sex:","Female"],
+				"startdate":["Birthday:","1963-10-6"],
+				"pword":	["People In Party:","12"],
+				"cpword":	["Phone Number:","312-555-5423"],
+				"email":	["Email:","jordanMooney@cocktailsanddreams.com"],
+				"rating":	["Rating:","8"],
+				"comments":	["Comments:","Divorce Party"]
+			},
+			"contact14":{
+				"group": 	["Day:", "Friday"],
+				"tname": 	["Name:","Elizabeth Shue"],
+				"sex":   	["Sex:","Female"],
+				"startdate":["Birthday:","1963-10-6"],
+				"pword":	["People In Party:","12"],
+				"cpword":	["Phone Number:","312-555-5423"],
+				"email":	["Email:","jordanMooney@cocktailsanddreams.com"],
+				"rating":	["Rating:","8"],
+				"comments":	["Comments:","Divorce Party"]
+			},
+			"contact15":{
+				"group": 	["Day:", "Saturday"],
+				"tname": 	["Name:","Elizabeth Shue"],
+				"sex":   	["Sex:","Female"],
+				"startdate":["Birthday:","1963-10-6"],
+				"pword":	["People In Party:","12"],
+				"cpword":	["Phone Number:","312-555-5423"],
+				"email":	["Email:","jordanMooney@cocktailsanddreams.com"],
+				"rating":	["Rating:","8"],
+				"comments":	["Comments:","Divorce Party"]
+			},
+			"contact16":{
+				"group": 	["Day:", "Thursday"],
+				"tname": 	["Name:","Elizabeth Shue"],
+				"sex":   	["Sex:","Female"],
+				"startdate":["Birthday:","1963-10-6"],
+				"pword":	["People In Party:","12"],
+				"cpword":	["Phone Number:","312-555-5423"],
+				"email":	["Email:","jordanMooney@cocktailsanddreams.com"],
+				"rating":	["Rating:","8"],
+				"comments":	["Comments:","Divorce Party"]
+			},
+			"contact17":{
+				"group": 	["Day:", "Thursday"],
+				"tname": 	["Name:","Elizabeth Shue"],
+				"sex":   	["Sex:","Female"],
+				"startdate":["Birthday:","1963-10-6"],
+				"pword":	["People In Party:","12"],
+				"cpword":	["Phone Number:","312-555-5423"],
+				"email":	["Email:","jordanMooney@cocktailsanddreams.com"],
+				"rating":	["Rating:","8"],
+				"comments":	["Comments:","Divorce Party"]
+			},
+			"contact18":{
+				"group": 	["Day:", "Friday"],
+				"tname": 	["Name:","Elizabeth Shue"],
+				"sex":   	["Sex:","Female"],
+				"startdate":["Birthday:","1963-10-6"],
+				"pword":	["People In Party:","12"],
+				"cpword":	["Phone Number:","312-555-5423"],
+				"email":	["Email:","jordanMooney@cocktailsanddreams.com"],
+				"rating":	["Rating:","8"],
+				"comments":	["Comments:","Divorce Party"]
+			},
+			"contact19":{
+				"group": 	["Day:", "Thursday"],
+				"tname": 	["Name:","Elizabeth Shue"],
+				"sex":   	["Sex:","Female"],
+				"startdate":["Birthday:","1963-10-6"],
+				"pword":	["People In Party:","12"],
+				"cpword":	["Phone Number:","312-555-5423"],
+				"email":	["Email:","jordanMooney@cocktailsanddreams.com"],
+				"rating":	["Rating:","8"],
+				"comments":	["Comments:","Divorce Party"]
+			},
+			"contact20":{
+				"group": 	["Day:", "Friday"],
+				"tname": 	["Name:","Elizabeth Shue"],
+				"sex":   	["Sex:","Female"],
+				"startdate":["Birthday:","1963-10-6"],
+				"pword":	["People In Party:","12"],
+				"cpword":	["Phone Number:","312-555-5423"],
+				"email":	["Email:","jordanMooney@cocktailsanddreams.com"],
+				"rating":	["Rating:","8"],
+				"comments":	["Comments:","Divorce Party"]
+
 			}
 				
 		};
@@ -236,9 +424,9 @@ window.addEventListener("DOMContentLoaded", function(){
                radios[i].setAttribute("checked" , "checked");
                }
            }
-        $('startdate').value = item.date[1];
-        $('pword')    .value = item.pword[1];
-        $('cpword')   .value = item.cpword[1];
+        $('birthday').value = item.date[1];
+        $('party')    .value = item.pword[1];
+        $('phone')   .value = item.cpword[1];
         $('email')    .value = item.email[1];
         $('rating')   .value = item.rating[1];
         $('comments') .value = item.comments[1];
