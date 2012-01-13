@@ -143,7 +143,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	
 	}
 	
-	//JSON Object Whick will auto populate local storage.
+	//JSON Object Which will auto populate local storage.
 	function autoFillData(){
 		var json = {
 			"contact1":	{
@@ -469,9 +469,9 @@ window.addEventListener("DOMContentLoaded", function(){
     function validate(e){
         //define element we want to check
         var getGroup = $('groups');
-        var gettname = $('tname');
-        var getpword = $('pword');
-        var getcpword = $('cpword');
+        var gettname = $('name');
+        var getpword = $('party');
+        var getcpword = $('phone');
         var getEmail = $('email');
         var getComments = $('comments');
         
