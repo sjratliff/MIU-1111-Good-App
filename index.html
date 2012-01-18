@@ -27,7 +27,7 @@
 
 	<div data-role="page" id="home">
 		<div data-role="header" data-position="fixed" data-theme="a">
-			<h1>The V.I.P. List Good App</h1>
+			<h1>The V.I.P. List</h1>
 		</div>
 		<div 
 		<a href="#additem" data-role="button"><img src="images/cta/vip_ban.jpg"</a>
@@ -80,9 +80,11 @@
 	
 	</div>
 	<div data-role="page" id="additem" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+			<h1>Sign Up</h1>
+		</div>
 	<form action="#" method="post" id="startPage">
                 <fieldset id="startFieldset">
-                    <span> Fill Info Below </span>
                     <ul id="errors"></ul>
                     <ul id="questions"></ul>
                         <li id="select"><label for="group">Pick Your Night :</label></li>
@@ -103,12 +105,14 @@
                 </fieldset>
                 <input type="submit" value="Save Contact" id="submit" /><br />
                 <nav>
-                <a href="#" id="clear"> Clear Data</a>
-                <a href="#" id="displayLink">Display Data </a>
-                <a href="#additem" id="addNew" style="display:none;">Add New Player</a>
+                <a href="#" id="clear"> Clear Info</a>
+                <a href="#" id="displayLink">Display V.I.P.'s </a>
+                <a href="#additem" id="addNew" style="display:none;">Add V.I.P. Party</a>
 
             </form>
-
+		<div data-role="footer" data-position="fixed">
+			<h4>Steve Ratliff MIU Week 3</h4>
+		</div>
 	
 	</div>
 	

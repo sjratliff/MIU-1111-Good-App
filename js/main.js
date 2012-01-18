@@ -1,5 +1,5 @@
-// Activity 4
-// Visual Frameworks (VFW)
+// Activity 3
+//(MIU)
 // Mobile Development
 // Full Sail University
 
@@ -83,11 +83,11 @@ window.addEventListener("DOMContentLoaded", function(){
         getSelectedRadio();
         var item            ={};
             item.group      =["Group:", $('groups').value];
-            item.tname      =["Name:", $('tname').value];
+            item.tname      =["Team Name:", $('tname').value];
             item.sex        =["Sex:", sexValue];
-            item.date       =["Birthday", $('startdate').value];
-            item.pword      =["Party:", $('pword').value];
-            item.cpword     =["Phone:", $('cpword').value];
+            item.date       =["Startdate", $('startdate').value];
+            item.pword      =["Password:", $('pword').value];
+            item.cpword     =["Confirm Password:", $('cpword').value];
             item.email       =["Email:", $('email').value];
             item.rating     =["Rating", $('rating').value];
             item.comments   =["Comments" , $('comments').value];
@@ -143,7 +143,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	
 	}
 	
-	//JSON Object Which will auto populate local storage.
+	//JSON Object Whick will auto populate local storage.
 	function autoFillData(){
 		var json = {
 			"contact1":	{
@@ -424,9 +424,9 @@ window.addEventListener("DOMContentLoaded", function(){
                radios[i].setAttribute("checked" , "checked");
                }
            }
-        $('birthday').value = item.date[1];
-        $('party')    .value = item.pword[1];
-        $('phone')   .value = item.cpword[1];
+        $('startdate').value = item.date[1];
+        $('pword')    .value = item.pword[1];
+        $('cpword')   .value = item.cpword[1];
         $('email')    .value = item.email[1];
         $('rating')   .value = item.rating[1];
         $('comments') .value = item.comments[1];
@@ -469,9 +469,9 @@ window.addEventListener("DOMContentLoaded", function(){
     function validate(e){
         //define element we want to check
         var getGroup = $('groups');
-        var gettname = $('name');
-        var getpword = $('party');
-        var getcpword = $('phone');
+        var gettname = $('tname');
+        var getpword = $('pword');
+        var getcpword = $('cpword');
         var getEmail = $('email');
         var getComments = $('comments');
         
