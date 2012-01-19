@@ -162,9 +162,53 @@
 		<div data-role="content">
 		
 			<form action="" method="post" id="reviews">
+			
+		
+		<div data-role="fieldcontain">
+			<label for="club">Pick A Club</label>
+			<select name="club" id="club_choice" data-native-menu="true">
+				<optgroup label="Westside Clubs">
+					<option value="Calicos">Calico Jacks Cantina</option>
+					<option value="mcfaddens">McFadden's Saloon</option>
+				</optgroup>
+				<optgroup label="Eastside Clubs">
+					<option value="sandbar">Sandbar Peiora</option>
+				</optgroup>
+					
+			</select>
+		</div>
+		
+		<div data-role="fieldcontain">
+			<label for="club">Were You On "The List"</label>
+			<select name="list" id="on_list" data-native-menu="true">
+			<option data-placeholder="true">Choses One</option>
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</select>
+		</div>
 				
-				<label for="location">Location:</label>
-				<input type="text" name="location" id="location" />
+		<div data-role="fieldcontain">
+			<label for="Email">Email Address:</label>
+				<input type="text" name="email" id="email" /> 
+		</div>
+		
+		
+		<div data-role="fieldcontain">
+			<label for="phone">Phone Number:</label>
+				<input type="text" name="phone" id="phone" /> 
+		</div>
+				
+		<div data-role="fieldcontain">
+			<label for="comments">Anything We Missed?</label>
+			<textarea></textarea>	
+		</div>
+		
+		<div data-role="fieldcontain">
+			<input type="reset" value="Clear Info" data-theme="a" />
+			<input type="submit" value="Send Info" data-theme="e" />
+					
+		
+		</div>
 				
 				
 			</form>
