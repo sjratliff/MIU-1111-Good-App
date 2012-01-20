@@ -4,6 +4,41 @@
 // Full Sail University
 
 //Wait until the DOM is ready.
+var parseReviews = function(data){
+	// uses form data here;
+	console.log(data);
+};
+
+$(document).ready(function(){
+
+	var rform = $('#reviews'),
+		rerrorlink = $('#rerrorslink')
+		;
+	
+	rform.validate({
+		invaildHandler: function(form, validator){
+			rerrorlink.click();
+			var html = '';
+			for(var key in validator.submitted){
+				var label = $('label[for^="'+ key +'"]').not('[generated]');
+				var legend = label.closest('fieldset').find('.uicontrolgroup-label');
+				var fieldName = legend.length ? legend.text() : label.text();
+				html += '<li>'+ fieldName +'</li>';
+				
+			};
+			$("#reviewerrors ul").html(html);
+		},
+		submitHandler: function(){
+			var data = rform.serializeArray();
+			parseReviews(data);
+		}
+		
+	});
+
+});
+
+
+
 window.addEventListener("DOMContentLoaded", function(){
     
     //getElementById Function
@@ -143,7 +178,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	
 	}
 	
-	//JSON Object Whick will auto populate local storage.
+	//JSON Object Which will auto populate local storage.
 	function autoFillData(){
 		var json = {
 			"contact1":	{

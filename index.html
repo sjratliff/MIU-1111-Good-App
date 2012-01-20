@@ -166,8 +166,8 @@
 		
 		<div data-role="fieldcontain">
 			<label for="club">Pick A Club</label>
-			<select name="club" id="club_choice" data-native-menu="false">
-			<option data-placeholder="true">Where Were You?</option>
+			<select name="club" id="club-choice" data-native-menu="false" class="required">
+			<option data-placeholder="true" value>Where Were You?</option>
 				<optgroup label="Westside Clubs">
 					<option value="Calicos">Calico Jacks Cantina</option>
 					<option value="mcfaddens">McFadden's Saloon</option>
@@ -181,22 +181,23 @@
 		
 		<div data-role="fieldcontain">
 			<label for="club">Were You On "The List"</label>
-			<select name="list" id="on_list" data-native-menu="false">
-			<option data-placeholder="true">Choses One</option>
+			<select name="list" id="on-list" data-native-menu="false" class="required">
+			<option data-placeholder="true"value>Choose One</option>
 				<option value="yes">Yes</option>
 				<option value="no">No</option>
 			</select>
 		</div>
 				
 		<div data-role="fieldcontain">
-			<label for="Email">Email Address:</label>
-			<input type="text" name="email" id="email" /> 
+			<label for="Email">Email Address</label>
+			<input type="email" name="email" id="email"class="required email" placeholder="user@something.com">		
+			
 		</div>
 		
 		
 		<div data-role="fieldcontain">
-			<label for="phone">Phone Number:</label>
-			<input type="text" name="phone" id="phone" /> 
+			<label for="phone">Phone Number</label>
+			<input type="tel" name="phone" id="phone"class="required number"placeholder="312-555-1212"> 
 		</div>
 				
 		<div data-role="fieldcontain">
@@ -205,13 +206,13 @@
 		</div>
 		
 		<div data-role="fieldcontain">
-			<input type="reset" value="Clear Info" data-theme="a" />
 			<input type="submit" value="Send Info" data-theme="e" />
+			<input type="reset" value="Clear Info" data-theme="" />
 					
 		
 		</div>
 				
-				
+				<a href="#reviewerrors" id="rerrorslink" data-rel="dialog" data-transition="pop">Errors</a>	
 			</form>
 		
 		
@@ -531,13 +532,25 @@
 
 		</div>
 		<a href="#additem" data-role="button" data-theme="e">Get on The List</a>
-		<div data-role="footer" data-position="fixed">
-			<h4>Steve Ratliff MIU Week 3</h4>
+			<div data-role="footer" data-position="fixed">
+				<h4>Steve Ratliff MIU Week 3</h4>
 		</div>
+		
+			<div data-role="dialog" id="reviewerrors">
+			<div data-role="header" data-theme="a">
+			<h1>Incomplete Fields</h1>
+	</div>
+			<div data-role="content">
+				<ul>
+					<li>Test.</li>
+				</ul>
+			</div>
+	</div>
 
 	<!-- JavaScript under here -->
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 
 </body>
