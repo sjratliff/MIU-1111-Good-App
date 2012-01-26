@@ -68,6 +68,8 @@ window.addEventListener("DOMContentLoaded", function(){
         selectLi.appendChild(makeSelect);
     }
     
+ 
+    
     
     //find value of selcted radio button.
     function getSelectedRadio(){
