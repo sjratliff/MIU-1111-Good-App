@@ -4,33 +4,32 @@
 // Full Sail University
 
 //Wait until the DOM is ready.
-var parseReviews = function(data){
+var formReviews = function(data){
 	// uses form data here;
-	console.log(data);
 };
 
 $(document).ready(function(){
 
 	var rform = $('#reviews'),
-		rerrorlink = $('#rerrorslink')
-		;
+		rerrorlink = $('#rerrorslink');
 	
 	rform.validate({
 		invaildHandler: function(form, validator){
 			rerrorlink.click();
 			var html = '';
 			for(var key in validator.submitted){
-				var label = $('label[for^="'+ key +'"]').not('[generated]');
+				var label =$('label[for^="'+ key +'"]').not('[generated]');
 				var legend = label.closest('fieldset').find('.uicontrolgroup-label');
-				var fieldName = legend.length ? legend.text() : label.text();
-				html += '<li>'+ fieldName +'</li>';
+				var fieldname = legend.length ? legend.text() : label.text();
+				html += '<li>'+ fieldname +'</li>';
 				
 			};
 			$("#reviewerrors ul").html(html);
 		},
 		submitHandler: function(){
 			var data = rform.serializeArray();
-			parseReviews(data);
+			alert("Form Submited");
+			formReviews(data);
 		}
 		
 	});
@@ -68,7 +67,8 @@ window.addEventListener("DOMContentLoaded", function(){
         selectLi.appendChild(makeSelect);
     }
     
- 
+ 	$('#additem').listview('refresh');
+
     
     
     //find value of selcted radio button.
