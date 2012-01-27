@@ -67,8 +67,7 @@ window.addEventListener("DOMContentLoaded", function(){
         selectLi.appendChild(makeSelect);
     }
     
- 	$('#additem').listview('refresh');
-
+ 
     
     
     //find value of selcted radio button.
@@ -176,10 +175,10 @@ window.addEventListener("DOMContentLoaded", function(){
 		var newImg = document.createElement('img');
 		var setSrc = newImg.setAttribute("src","images/Lettericons/"+ catName +".png");
 		imageLi.appendChild(newImg);
-		 
-	
+
+
 	}
-	
+
 	//JSON Object Which will auto populate local storage.
 	function autoFillData(){
 		var json = {
@@ -193,7 +192,7 @@ window.addEventListener("DOMContentLoaded", function(){
 				"email":	["Email:","pdiddy@badboyent.com"],
 				"rating":	["Rating:","8"],
 				"comments":	["Comments:","Record Release Party"]
-	
+
 			},
 			"contact2":	{
 				"group": 	["Day:", "Saturday"],
@@ -405,7 +404,7 @@ window.addEventListener("DOMContentLoaded", function(){
 				"comments":	["Comments:","Divorce Party"]
 
 			}
-				
+
 		};
 		//store the JSON OBJECT into local storage
 		for(var n in json){
